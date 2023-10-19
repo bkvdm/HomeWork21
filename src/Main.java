@@ -5,20 +5,6 @@ import java.util.Map;
 
 public class Main {
 
-    public static int valueRandom() {
-        java.util.Random random = new java.util.Random();
-        int minimumScore = 1;
-        int arrayRandom = random.nextInt(9) + minimumScore;
-        return arrayRandom;
-    }
-
-    public static int valueSize() {
-        java.util.Random random = new java.util.Random();
-        int minimumScore = 40;
-        int sizeRandom = random.nextInt(100) + minimumScore;
-        return sizeRandom;
-    }
-
     public static List<Integer> listRandom() {
         java.util.Random random = new java.util.Random();
 
@@ -36,7 +22,6 @@ public class Main {
 
     public static List<String> listRandomString() {
         java.util.Random random = new java.util.Random();
-//        Random random = new Random();
         List<String> words = new ArrayList<>(Arrays.asList("Автомобиль", "Автобус", "Велосипед", "Грузовик", "Мотоцикл", "Поезд", "Самолет", "Корабль", "Метро", "Такси", "Фургон", "Лодка", "Скутер", "Плот", "Верблюд", "Собака", "Кошка", "Лев", "Тигр", "Гепард", "Леопард", "Ягуар", "Пантера", "Рысь", "Волк", "Медведь", "Ежик", "Заяц", "Кролик", "Белка", "Мышь", "Крыса", "Кенгуру", "Жираф", "Зебра", "Антилопа", "Олень", "Лось", "Марал", "Кабан", "Баран", "Овца", "Коза", "Свинья", "Петух", "Курица", "Утка", "Гусь", "Страус", "Павлин", "Фазан", "Голубь", "Воробей", "Канарейка", "Попугай", "Жако", "Амазон", "Сорока", "Ворона", "Ворон", "Чайка", "Гагара", "Альбатрос", "Пеликан", "Цапля", "Аист", "Фламинго", "Лебедь", "Гусь", "Утенок", "Цыпленок", "Щенок", "Котенок", "Теленок", "Козленок", "Поросенок", "Жеребенок", "Ягненок", "Козленок", "Цыпленок", "Гусененок", "Кенгуренок", "Страусеннок", "Головастик", "Лягушонок", "Черепаха", "Ящерица", "Хамелеон", "Уж", "Змея", "Кобра", "Гадюка", "Ехидна", "Мангуст", "Суслик", "Хомяк", "Бурундук", "Сурок", "Дикобраз", "skypro"));
         int minimumScore = 1;
         int iteratorRandom = random.nextInt(words.size()) + minimumScore;
@@ -73,12 +58,7 @@ public class Main {
         System.out.println("Задача 2");
         List<Integer> numberSeriesList = listRandom();
         System.out.println(numberSeriesList);
-//        Set<Integer> numberSetEven = new HashSet<>();
         List<Integer> numberSetEven = new ArrayList<>();
-////        for (Integer i : numberSeriesList) {
-//        for (int i = 0; i < numberSeriesList.size(); i++) {
-//
-//        }
 
         for (int i = 0; i < numberSeriesList.size(); i++) {
             if (numberSeriesList.get(i) % 2 == 0 && !numberSetEven.contains(numberSeriesList.get(i))) {
@@ -89,9 +69,6 @@ public class Main {
         System.out.println(numberSetEven);
     }
 
-    //    public static void main(String[] args) {
-//        System.out.println("Hello world!");
-//    }
     public static void task3() {
         System.out.println("Задача 3");
         List<String> stringList = listRandomString();
@@ -118,11 +95,5 @@ public class Main {
         for (String uniqueWord : uniqueWords) {
             System.out.println(stringMap.get(uniqueWord));
         }
-//        for (Integer i = 0; i < stringMap.get(i); i++) {
-//            
-//        }
-//        for (int i = 0; i < stringMap.size(); i++) {
-//            stringMap.get(i);
-//        }
     }
 }
