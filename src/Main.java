@@ -77,6 +77,7 @@ public class Main {
         System.out.println(stringList);
         System.out.println(uniqueWords);
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         List<String> stringList = listRandomString();
